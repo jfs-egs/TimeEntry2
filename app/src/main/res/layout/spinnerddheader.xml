@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="#FFE4C4"
+    android:background="#04316b"
+    android:textSize="33dp"
+    android:text="SPECIAL TEXT"
+    android:id="@+id/spinnerheaderlayout"
+    >
+
+
+</TextView>

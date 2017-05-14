@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TimeEntry</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="spinnerprompt">Choose a Client</string>
+
+    <string-array name="clientlist">
+        <item>--CHOOSE A CLIENT--</item>
+        <item>BPI</item>
+        <item>Crudup</item>
+        <item>Denson</item>
+        <item>Traincroft</item>
+        <item>Harken</item>
+        <item>Hill</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

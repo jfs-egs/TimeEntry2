@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="top|start"
+    android:background="@color/jfspagebackground"
+    android:elevation="2dp"
+    android:id="@+id/JFSab"
+    style="@style/JFSActionBarStyle"
+    android:theme="@style/JFSAppTheme"
+    app:theme="@style/JFSAppTheme"
+    android:fitsSystemWindows="true"
+    android:layout_alignParentTop="true">     <!--TITLE DEFAULTS TO AppName, BUT CAN BE SET BY app:title="TEST NAME." app:titleMarginStart="130dp"
+                                                SETS TITLE MARGIN FROM LEFT.  app SETTINGS HERE OVERRIDE SETTINGS IN JFSActionBarTitleStyle IN styles.xml -->
+<!-- TITLE ITEMS
+    app:title="TIME ENTRY"
+        app:titleTextAppearance="@style/JFSActionBarTitleStyle"
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/tbll">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:layout_gravity="start"
+            android:id="@+id/leftarrow"
+            android:src="@mipmap/bisquereturn" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="4"
+            android:text="TIME ENTRY"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            style="@style/JFSActionBarTitleStyle"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/bisqueadd"
+            android:src="@mipmap/bisqueplus"/>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/octoiv"
+            android:src="@mipmap/octo_delete"/>
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/deletefragid"
+    tools:context=".JFSDeleteEntriesFrag">
+
+
+    <!--      <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/deletecal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </CalendarView> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:id="@+id/rl">
+                                                    <!--BECAUSE ELEMENTS (SUCH AS TEXTVIEW) CALLED IN ACTIVITY, CANNOT SET ITEMS LIKE TEXT OR BACKGROUND COLOR HERE, ONLY IN JAVA FOR THIS xml-->
+                                                    <!-- FRAGMENTS DO NOT INHERIT FROM VIEW -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_alignParentTop="true"
+            android:calendarViewShown="false"
+            android:id="@+id/fragtext">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fragtext">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:background="@color/jfsbtncolor"
+                    android:textSize="20dp"
+                    android:id="@+id/okbtn"
+                    android:text="OK"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:background="@color/jfsbtncolor"
+                    android:textSize="20dp"
+                    android:id="@+id/cancelbtn"
+                    android:text="Cancel" />
+        </LinearLayout>>
+
+    </LinearLayout>
+</FrameLayout>
